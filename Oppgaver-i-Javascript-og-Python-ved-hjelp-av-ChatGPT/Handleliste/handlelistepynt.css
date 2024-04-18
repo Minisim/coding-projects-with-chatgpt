@@ -1,0 +1,52 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 4%;
+    background-color: rgb(144, 188, 144);
+}
+#container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color:#FFFF78;
+    border: 3px solid #C6C38A;
+    border-radius: 9px;
+}
+h1 {
+    text-align: center;
+}
+input[type="nytt produkt"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #005248;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #347d75;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.crossed-off {
+    text-decoration: line-through;
+    color: #b00000;
+}
