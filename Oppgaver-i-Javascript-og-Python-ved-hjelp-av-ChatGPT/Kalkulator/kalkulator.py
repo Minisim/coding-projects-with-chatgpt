@@ -1,45 +1,29 @@
+import re
 
-def add(x, y):
-    return x + y
+def evaluate_expression(expression):
+    try:
+        result = eval(expression)
+        return result
+    except Exception as e:
+        return str(e)
 
-def subtract(x, y):
-    return x - y
+def main():
+    print("Welcome to the Algebraic Calculator!")
+    print("Enter an algebraic expression or type 'quit' to exit.")
 
-def multiply(x, y):
-    return x * y
+    while True:
+        expression = input("Enter expression: ")
 
-def divide(x, y):
-    return x / y
+        if expression.lower() == "quit":
+            print("Exiting...")
+            break
 
+        # Check if the expression is valid (contains only allowed characters)
+        if re.match(r'^[0-9\s+\-*/().\^xX]+$', expression):
+            result = evaluate_expression(expression)
+            print("Result:", result)
+        else:
+            print("Invalid expression! Please enter a valid algebraic expression.")
 
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
-
-while True:
-    choice = input("Enter a choice(1/2/3/4): ")
-
-    if choice in ('1', '2', '3', '4'):
-        try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
-
-        if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
-
-        elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
-
-        elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
-
-        elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
-    else:
-        print("Invalid Input")
-
+if __name__ == "__main__":
+    main()
