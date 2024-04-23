@@ -9,12 +9,12 @@ def evaluate_expression(expression):
 
 def main():
     print("Welcome to the Algebraic Calculator!")
-    print("Enter an algebraic expression or type 'quit' to exit.")
+    print("Enter an algebraic expression or type 'exit' to exit.")
 
     while True:
         expression = input("Enter expression: ")
 
-        if expression.lower() == "quit":
+        if expression.lower() == "exit":
             print("Exiting...")
             break
 
