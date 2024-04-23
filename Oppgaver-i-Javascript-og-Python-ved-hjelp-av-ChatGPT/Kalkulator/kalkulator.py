@@ -19,7 +19,7 @@ print("3.Multiply")
 print("4.Divide")
 
 while True:
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter a choice(1/2/3/4): ")
 
     if choice in ('1', '2', '3', '4'):
         try:
@@ -43,8 +43,3 @@ while True:
     else:
         print("Invalid Input")
 
-
-
-
-
-#Kilde: https://www.programiz.com/python-programming/examples/calculator
