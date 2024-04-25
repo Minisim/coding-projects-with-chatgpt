@@ -10,13 +10,14 @@ input[type="text"] {
     margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
+button{
+    position: center;
+    padding: 13px 20px;
     font-size: 18px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
 }
 
@@ -24,7 +25,4 @@ button:hover {
     background-color: #45a049;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 24px;
-}
+
