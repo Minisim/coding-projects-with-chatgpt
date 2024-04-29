@@ -1,12 +1,10 @@
-
-
 function calculate() {
     var expression = document.getElementById("expression").value;
     try {
         var result = eval(expression);
-        document.getElementById("result").innerHTML = "Result: " + result;
+        document.getElementById("expression").value = result;
     } catch (error) {
-        document.getElementById("result").innerHTML = "Error: " + error.message;
+        document.getElementById("expression").value = 'Error: ' + error.message;
     }
 }
 function appendToDisplay(value) {
